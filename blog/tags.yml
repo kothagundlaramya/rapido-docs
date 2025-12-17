@@ -1,3 +1,11 @@
-booking: {}
-rapido: {}
-guide: {}
+booking:
+  label: Booking
+  description: Articles related to booking process
+
+rapido:
+  label: Rapido
+  description: Articles related to Rapido platform
+
+guide:
+  label: Guide
+  description: Helpful guides and tutorials

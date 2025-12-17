@@ -1,3 +1,8 @@
+---
+id: order-expired-immediately
+title: Order Expired Immediately
+---
+
 # Order Expired Immediately
 
 ## Problem Statement
@@ -15,7 +20,8 @@ PMs are unsure whether this is a config issue, segment issue, or a system bug.
 
 ## Common Causes
 1. Order was created under an **old segment**
-2. **Auto-priority configuration** not applied
+2. **Auto-priority configuration** not applied  
+   See [Auto Priority Issue](../configs/auto-priority-not-applied.md) for details
 3. Segment mapping was changed after config creation
 4. Configs exist but are **not approved / inactive**
 
@@ -51,7 +57,9 @@ Example:
 Look for:
 - Segment mismatch
 - Missing priority application
-- Immediate expiry trigger
+- Immediate expiry trigger  
+
+See [Logs to Check](../data-debugging/logs-to-check.md) for detailed log guidance.
 
 ---
 
@@ -67,9 +75,3 @@ Escalate **only if all below are true**:
 - Segment is correct
 - Configs are active & approved
 - Logs show expiry without config mismatch
-
----
-
-## Related Docs
-- [Auto Priority Not Applied](../configs/auto-priority-not-applied.md)
-- [Where to Check Order Logs](../data-debugging/logs-to-check.md)
